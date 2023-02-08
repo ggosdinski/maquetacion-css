@@ -43,7 +43,6 @@ header{
 
 .redes a{
    margin: 0 5px;
-
 }
 
 .icons{
@@ -76,6 +75,10 @@ nav{
     color: black;
     font-weight: bold;
     font-size: 18px;
+}
+
+.perfil a:hover{
+    color: #47cfac;
 }
 
 .home-main{
@@ -260,4 +263,47 @@ footer p {
     padding-top: 15px;
 }
 
+/*BLOG*/
+.blog-main{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
 
+.blog-img-container{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.blog-img-container img{
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.text-container{
+    display: grid;
+    width: 60%;
+    margin: auto;
+}
+
+.text-container h2{
+    font-size: 14px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+
+.text-container h1{
+    border-top: 1px solid lightgrey;
+    margin-bottom: 15px;
+    padding-top: 15px;
+}
+
+.text-container p{
+    line-height: 16px;
+    margin-bottom: 25px;
+}
