@@ -493,4 +493,39 @@ footer p {
         margin: 0 auto;
     }
 }
+
+
+/*Responsive Desing- MI BLOG*/
+
+
+@media screen and (max-width:350px){
+    .blogs-main-new{
+        display: inline;
+       /*  grid-template-rows: 2fr; */
+       margin:  0 auto;
+    }
+
+    .blogs-news-img-container img{
+        width: 100%;
+    }
+
+    .blogs-news-info-container h2{
+        margin: 25px 0;
+    }
+
+    .blogs-post-container{
+        /* display: inline; */
+        margin: 0 auto;
+    }
+
+    .post-container{
+       display: inline;
+    }
+
+    .post-container img{
+       padding-right: 25px;
+       margin-top: 25px;
+    }
+
     
+}
