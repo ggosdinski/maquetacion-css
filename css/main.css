@@ -421,14 +421,39 @@ footer p {
     font-size: 12px;
 }
 
+
+
 /*Responsive Desing- MI BLOG*/
+@media screen and (max-width:350px){
+    .redes{
+        width: 95%;
+        justify-self: left;
+        padding-right: 15px;
+    }
+
+    .logo a{
+        right: 10px;
+    }
+
+    .logo img{
+       padding: 45px;
+    }
+   
+    
+    .home-main-text{
+        width: 350px;
+    }
+}
+
 @media screen and (max-width:425px){
-    .icons{
+     .icons{
         margin: 0 auto;
     }
-    .logo{
-       margin: 0 auto;
+
+    .icons span{
+        margin:  0 auto;
     }
+
     .perfil a{
         font-size: 16px;
     }
