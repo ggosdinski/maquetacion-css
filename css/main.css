@@ -425,9 +425,14 @@ footer p {
 
 /*Responsive Desing- MI BLOG*/
 @media screen and (max-width:350px){
+    .home-body{
+        display: grid;
+        justify-content: center;
+    }
+
     .redes{
-        width: 95%;
-        justify-self: left;
+        width: 100%;
+        justify-self: center;
         padding-right: 15px;
     }
 
@@ -437,13 +442,22 @@ footer p {
 
     .logo img{
        padding: 45px;
+       width: 100%;
     }
    
     
     .home-main-text{
         width: 350px;
+        display: flex;
+        margin: 0 auto;
+    }
+
+    .perfil{
+        display: none;
     }
 }
+
+
 
 @media screen and (max-width:425px){
      .icons{
@@ -465,3 +479,18 @@ footer p {
         margin: 0 auto 60px;
     }
 }
+
+@media screen and (max-width:768px){
+    .home-main section{
+        margin-top: 0;
+    }
+
+    .home-main h1{
+       width: 700px;
+    }
+
+    .button{
+        margin: 0 auto;
+    }
+}
+    
