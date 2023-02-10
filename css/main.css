@@ -436,29 +436,36 @@ footer p {
         padding-right: 15px;
     }
 
+    .logo {
+        display: flex;
+    }
+
     .logo a{
-        right: 10px;
+       margin-left: 20px;
     }
 
     .logo img{
-       padding: 45px;
-       width: 100%;
-    }
-   
-    
-    .home-main-text{
-        width: 350px;
-        display: flex;
-        margin: 0 auto;
+        width: 60%;
+     }
+
+     .home-main section{
+        margin-top: 20px;
+     }
+
+    .home-main h1{
+        width: 300px;
+        font-size: 20px;
+        align-items: center;
+        line-height: 25px;
     }
 
-    .perfil{
-        display: none;
+    .button{
+        margin: 0 auto;
     }
 }
 
 
-
+/* 
 @media screen and (max-width:425px){
      .icons{
         margin: 0 auto;
@@ -492,12 +499,10 @@ footer p {
     .button{
         margin: 0 auto;
     }
-}
+} */
 
 
 /*Responsive Desing- MI BLOG*/
-
-
 @media screen and (max-width:550px){
     /*Le puse 550 px porque en todas las medidas superiores
     se ve bien. Y en las medidas anteriores con este breakpoint se ve correcto*/
