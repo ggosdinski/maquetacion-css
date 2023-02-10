@@ -498,7 +498,9 @@ footer p {
 /*Responsive Desing- MI BLOG*/
 
 
-@media screen and (max-width:350px){
+@media screen and (max-width:550px){
+    /*Le puse 550 px porque en todas las medidas superiores
+    se ve bien. Y en las medidas anteriores con este breakpoint se ve correcto*/
     .blogs-main-new{
         display: inline;
        /*  grid-template-rows: 2fr; */
@@ -526,6 +528,4 @@ footer p {
        padding-right: 25px;
        margin-top: 25px;
     }
-
-    
 }
