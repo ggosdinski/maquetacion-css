@@ -320,7 +320,7 @@ footer p {
     display: grid;
     grid-template-columns: 1fr 2fr;
     width: 100%;
-    height: 320px;
+    height: auto;
     align-items: center;
 }
 
@@ -472,3 +472,18 @@ footer p {
        margin-top: 25px;
     }
 }
+
+/*Responsive Desing- MI PERFIL*/
+@media screen and (max-width:768px) {
+    .profile-top-text-container{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+/*max-width: 1200.. Este queda por fuera.
+    992px
+    768px
+    576px  
+    360px
+*/
