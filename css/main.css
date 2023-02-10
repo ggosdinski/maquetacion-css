@@ -437,6 +437,9 @@ footer p {
     .home-main-text{
         font-size: 25px;
     }
+    .text-container{
+        width: 90%;
+    }
 }
 
 
