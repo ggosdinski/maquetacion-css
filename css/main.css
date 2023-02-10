@@ -425,7 +425,7 @@ footer p {
 
 /*Responsive Desing- MI BLOG*/
 
-@media screen and (max-width: 10421px){
+@media screen and (max-width: 700px){
     .button{
         margin: 25px auto 0 auto;
     }
@@ -435,7 +435,7 @@ footer p {
     }
     
     .home-main-text{
-        font-size: 30px;
+        font-size: 25px;
     }
 }
 
