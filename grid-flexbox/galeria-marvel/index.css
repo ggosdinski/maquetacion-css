@@ -2,6 +2,7 @@ body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
 }
 
 section{
@@ -30,7 +31,7 @@ section img:hover{
 .home{
     display: flex;
     background-image: url(./imagenes/menu.png);
-    background-position: center;
+    background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
     justify-content: left;
@@ -38,27 +39,26 @@ section img:hover{
 }
 
 .home h1{
-    font-family: monospace;
     font-size: 60px;
    /*  filter: blur(2px); */
-   margin-left: 15px;
+   margin-left: 25px;
    line-height: 70px;
 }
 
-.home h1:hover{
+/* .home h1:hover{
     filter: none;
 }
-
+ */
 .home a{
     color: #6e98ca;
     text-decoration: none;
-
 }
 
 .home a:hover{
     transition: 3s ease;
     color: white;
     font-size: 68px;
+    font-weight: bold;
 }
 
 /* .home:hover{
