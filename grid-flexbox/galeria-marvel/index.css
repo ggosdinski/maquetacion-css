@@ -64,3 +64,14 @@ section img:hover{
 /* .home:hover{
     background-image: url(./imagenes/menu-desenfocado.png);
 } */
+
+@media screen and (max-width:360px) {
+    .home{
+        background-image: url(./imagenes/menu-desenfocado.png);
+        background-position: top;
+        background-repeat: no-repeat;
+        background-size: cover;
+        justify-content: left;
+        align-items: center;
+    }
+}
