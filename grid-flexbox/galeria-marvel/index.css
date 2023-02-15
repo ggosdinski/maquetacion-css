@@ -38,9 +38,11 @@ section img:hover{
 }
 
 .home h1{
-    font-size: 62px;
+    font-family: monospace;
+    font-size: 60px;
    /*  filter: blur(2px); */
    margin-left: 15px;
+   line-height: 70px;
 }
 
 .home h1:hover{
@@ -54,9 +56,9 @@ section img:hover{
 }
 
 .home a:hover{
-    transition: 2s ease;
+    transition: 3s ease;
     color: white;
-    font-size: 72px;
+    font-size: 68px;
 }
 
 /* .home:hover{
