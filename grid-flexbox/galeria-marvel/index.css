@@ -24,4 +24,5 @@ section img:hover{
     width: 400px;
     opacity: 1;
     filter: contrast(120%);
+   /* filter: saturate(120%); */
 }
