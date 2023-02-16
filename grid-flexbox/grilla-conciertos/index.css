@@ -202,3 +202,52 @@ aside:hover{
         grid-column: 2/6;
     }
 }
+
+@media screen and (max-width: 400px) {
+    .container{
+        display: flex;
+        flex-direction: column;
+     }
+
+     .card-container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    aside{
+   /*      display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        height: 200px;
+        position: relative; */
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+    }
+    
+    aside h3{
+        font-size: 14px;
+        text-align: center;
+        align-self: start;
+        grid-column: 1/4;
+    }
+
+    aside p{
+        font-size: 12px;
+        text-align: center;
+        padding: 0 10px;
+        
+    }
+
+    a{
+     /*    font-size: 12px; 
+        padding: 10px 12px;
+        position: absolute;
+        margin-left: 35%; */
+        grid-row: 3;
+        grid-column: 1/4;
+        padding: 10px;
+    }
+}
