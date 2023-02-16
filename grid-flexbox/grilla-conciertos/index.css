@@ -117,13 +117,6 @@ aside:hover{
 
 @media screen and (max-width: 600px) {
     .container{
-      /*   width: 90%;
-        max-width: 1200px;
-        margin: auto;
-        padding: 40px 0;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 20px; */
         display: flex;
         flex-direction: column;
      }
@@ -159,5 +152,53 @@ aside:hover{
         font-size: 12px; 
         align-self: end;
         padding: 6px 4px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .container{
+        display: flex;
+        flex-direction: column;
+     }
+
+     .card-container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    aside{
+   /*      display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        height: 200px;
+        position: relative; */
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+    
+    aside h3{
+        font-size: 14px;
+        text-align: center;
+        align-self: start;
+        grid-column: 1/7;
+    }
+
+    aside p{
+        font-size: 12px;
+        text-align: center;
+        padding: 0 10px;
+        
+    }
+
+    a{
+     /*    font-size: 12px; 
+        padding: 10px 12px;
+        position: absolute;
+        margin-left: 35%; */
+        grid-row: 3;
+        grid-column: 2/6;
     }
 }
