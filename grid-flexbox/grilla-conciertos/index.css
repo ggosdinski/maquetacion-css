@@ -7,86 +7,157 @@
 body{
     font-family: 'Roboto', sans-serif;
     background: #1D202B;
+    color: #fff;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
 }
 
 .container{
-    display: grid;
-    grid-template-columns: 3fr 1fr;
-    justify-content: center;
-    height: 100vh;
-    padding: 15px;
-    gap: 25px;
-    margin: auto 0;
-    border: 2px solid black;
+   width: 90%;
+   max-width: 1200px;
+   margin: auto;
+   padding: 40px 0;
+   display: grid;
+   grid-template-columns: 3fr 1fr;
+   gap: 20px;
 }
 
 .card-container{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    height: 100%;
-    gap: 25px;
+    gap: 20px;
 }
 
 .card {
-    background-size: cover;
-	background-position: center;
-    border-radius: 18px;
-    padding: 15px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    color:  white;
-    font-weight: bold;
-    transition: transform .4s;
-}
-
-.card h3{
-    
-    font-size: 22px;
-    font-weight: bold;
-}
-
-aside{
-    height: 100%;
     border-radius: 10px;
-    padding: 18px;
+    min-height: 200px;
+    font-weight: bold;
+    padding: 20px;
     position: relative;
+    background-size: cover;
+    background-position: center center;
+    overflow: hidden;
+    transition: transform .4s;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.50);
+    cursor: pointer;
+}
+
+.card .text{
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    text-align: center;
-    background-size: cover;
-	background-position: center;
 }
 
-aside h3{
-    color: white;
-    font-size: 22px;
-    font-weight: bold;
+.text h3{
+    font-size: 18px;
 }
 
-aside p{
-    color:white;
-    font-weight: bold;
+.text p{
     font-size: 16px;
 }
 
-a{
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
-    font-weight: bolder;
-    background-color: #1D202B;
-    padding: 12px 0;
+aside{
     border-radius: 10px;
-    transition: transform .2s;
+    text-align: center;
+    padding: 20px;
+    background-size: cover;
+    background-position: center center;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform .4s;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.50);
+    cursor: pointer;
+}
+
+aside h3{
+    font-size: 18px;
+}
+
+aside p{
+    font-size: 12px;
+}
+
+a{
+    background-color: yellow;
+    color: black;
+    text-decoration: none;
+    border-radius: 10px;
+    padding: 10px 5px;
+    font-weight: bold;
 }
 
 a:hover{
-    background-color: #fd5f28;
-     transform: scale(1.1);
+    background: linear-gradient(164deg, rgba(208,4,5,1) 27%, rgba(1,19,14,1) 92%);
+    color: white;
+}
+
+aside:hover{
+    transform: scale(1.1);
 }
 
 .card:hover{
     transform: scale(1.1);
+}
+
+.card .card1:hover{
+    backdrop-filter: blur(20px);
+}
+
+@media screen and (max-width: 900px) {
+	
+}
+
+@media screen and (max-width: 700px) {
+	
+}
+
+@media screen and (max-width: 600px) {
+    .container{
+      /*   width: 90%;
+        max-width: 1200px;
+        margin: auto;
+        padding: 40px 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px; */
+        display: flex;
+        flex-direction: column;
+     }
+
+     .card-container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    aside{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        height: 200px;
+    }
+    
+    aside h3{
+        font-size: 14px;
+        text-align: left;
+        align-self: start;
+    }
+
+    aside p{
+        font-size: 12px;
+        text-align: center;
+       padding: 0 10px;
+        
+    }
+
+    a{
+        font-size: 12px; 
+        align-self: end;
+        padding: 6px 4px;
+    }
 }
