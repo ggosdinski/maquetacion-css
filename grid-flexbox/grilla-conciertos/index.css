@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background: #1D202B;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    justify-content: center;
+    height: 100vh;
+    padding: 15px;
+    gap: 25px;
+    margin: auto 0;
+    border: 2px solid black;
+}
+
+.card-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    height: 100%;
+    gap: 25px;
+}
+
+.card {
+    background-size: cover;
+	background-position: center;
+    border-radius: 18px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color:  white;
+    font-weight: bold;
+    transition: transform .4s;
+}
+
+.card h3{
+    
+    font-size: 22px;
+    font-weight: bold;
+}
+
+aside{
+    height: 100%;
+    border-radius: 10px;
+    padding: 18px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    background-size: cover;
+	background-position: center;
+}
+
+aside h3{
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+aside p{
+    color:white;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bolder;
+    background-color: #1D202B;
+    padding: 12px 0;
+    border-radius: 10px;
+    transition: transform .2s;
+}
+
+a:hover{
+    background-color: #fd5f28;
+     transform: scale(1.1);
+}
+
+.card:hover{
+    transform: scale(1.1);
+}
